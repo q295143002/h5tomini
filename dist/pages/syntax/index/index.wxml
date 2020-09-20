@@ -1,0 +1,9 @@
+
+    <view class='anu-block'>
+        <view class='anu-page-header'>{{state.title}}</view>
+        <block wx:for="{{state.pages}}" wx:for-item="page" wx:for-index="i2930" wx:key="title">
+            <view class='anu-item'>
+                <anu-navigator data-instance-uid="{{'i99_28_' + i2930}}">{{page.title}}</anu-navigator>
+            </view>
+        </block>
+    </view>

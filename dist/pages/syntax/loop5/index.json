@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "anu-dog": "/pages/syntax/components/Dog/index"
+    }
+}

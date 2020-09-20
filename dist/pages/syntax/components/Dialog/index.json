@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "anu-count": "/pages/syntax/components/Count/index"
+    },
+    "component": true
+}

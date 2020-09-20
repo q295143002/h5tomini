@@ -1,0 +1,2 @@
+
+    <view>Count:{{props.count}}<button bindtap="dispatchEvent" data-tap-uid="e10_16" data-beacon-uid="default">Reset</button><button bindtap="dispatchEvent" data-tap-uid="e13_16" data-beacon-uid="default">+</button><button bindtap="dispatchEvent" data-tap-uid="e16_16" data-beacon-uid="default">-</button></view>

@@ -1,0 +1,11 @@
+
+    <view class="col">
+        <view><text>输入要储存的内容, 放value中</text><input value="{{state.value}}" bindinput="dispatchEvent" data-input-uid="e90_75" data-beacon-uid="default" /></view>
+        <view bindtap="dispatchEvent" class="item" data-tap-uid="e91_13" data-beacon-uid="default"><text>setStorage</text></view>
+        <view bindtap="dispatchEvent" class="item" data-tap-uid="e94_13" data-beacon-uid="default"><text>getStorage('value')</text></view>
+        <view bindtap="dispatchEvent" class="item" data-tap-uid="e97_13" data-beacon-uid="default"><text>getStorage( 'aaa' )</text></view>
+        <view bindtap="dispatchEvent" class="item" data-tap-uid="e100_13" data-beacon-uid="default"><text>removeStorage</text></view>
+        <view bindtap="dispatchEvent" class="item" data-tap-uid="e103_13" data-beacon-uid="default"><text>setStorageSync</text></view>
+        <view bindtap="dispatchEvent" class="item" data-tap-uid="e106_13" data-beacon-uid="default"><text>getStorageSync</text></view>
+        <view bindtap="dispatchEvent" class="item" data-tap-uid="e109_13" data-beacon-uid="default"><text>removeStorageSync</text></view>
+    </view>

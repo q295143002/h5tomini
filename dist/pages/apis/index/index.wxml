@@ -1,0 +1,33 @@
+
+    <view class="api-page">
+        <view class="anu-block">
+            <view bindtap="dispatchEvent" class="anu-item" data-tap-uid="e272_15" data-beacon-uid="default"><text>showModal</text></view>
+            <view bindtap="dispatchEvent" class="anu-item" data-tap-uid="e275_15" data-beacon-uid="default"><text>showToast</text></view>
+            <view bindtap="dispatchEvent" class="anu-item" data-tap-uid="e278_15" data-beacon-uid="default"><text>显示上下文菜单</text></view>
+            <view bindtap="dispatchEvent" class="anu-item" data-tap-uid="e281_15" data-beacon-uid="default"><text>短震</text></view>
+            <view bindtap="dispatchEvent" class="anu-item" data-tap-uid="e284_15" data-beacon-uid="default"><text>长震</text></view>
+            <view bindtap="dispatchEvent" class="anu-item" data-tap-uid="e287_15" data-beacon-uid="default"><text>打电话</text></view>
+            <view bindtap="dispatchEvent" class="anu-item" data-tap-uid="e290_15" data-beacon-uid="default"><text>文件上传，里面有一个getRawResult方法，可以获uploadTask对象，从而添加进度回调</text></view>
+            <view bindtap="dispatchEvent" class="anu-item" data-tap-uid="e293_15" data-beacon-uid="default"><text>文件下载，里面有一个getRawResult方法，可以获downloadTask对象，从而添加进度回调</text></view>
+            <view bindtap="dispatchEvent" class="anu-item" data-tap-uid="e297_12" data-beacon-uid="default"><text>数据请求</text></view>
+            <view bindtap="dispatchEvent" class="anu-item" data-tap-uid="e302_15" data-beacon-uid="default"><text>扫一扫</text></view>
+            <view bindtap="dispatchEvent" class="anu-item" data-tap-uid="e306_12" data-beacon-uid="default"><text>存储</text></view>
+            <view bindtap="dispatchEvent" class="anu-item" data-tap-uid="e312_15" data-beacon-uid="default"><text>获取本地文件</text></view>
+            <view bindtap="dispatchEvent" class="anu-item" data-tap-uid="e316_12" data-beacon-uid="default"><text>剪切板</text></view>
+            <view bindtap="dispatchEvent" class="anu-item" data-tap-uid="e322_12" data-beacon-uid="default"><text>画板</text></view>
+            <view bindtap="dispatchEvent" class="anu-item" data-tap-uid="e327_15" data-beacon-uid="default"><text>获取地理位置</text></view>
+            <view bindtap="dispatchEvent" class="anu-item" data-tap-uid="e330_15" data-beacon-uid="default"><text>获取网络类型</text></view>
+            <view bindtap="dispatchEvent" class="anu-item" data-tap-uid="e333_15" data-beacon-uid="default"><text>获取系统信息(getSystemInfo)</text></view>
+            <view bindtap="dispatchEvent" class="anu-item" data-tap-uid="e336_15" data-beacon-uid="default"><text>选择图片(1张)</text></view>
+            <block wx:for="{{state.imgs}}" wx:for-item="item" wx:for-index="i8495">
+                <image src="{{item}}" />
+            </block>
+            <view bindtap="dispatchEvent" class="anu-item" data-tap-uid="e344_15" data-beacon-uid="default"><text>选择图片(多张)</text></view>
+            <block wx:for="{{state.imgs2}}" wx:for-item="item" wx:for-index="i8737">
+                <image src="{{item}}" />
+            </block>
+            <view bindtap="dispatchEvent" class="anu-item" data-tap-uid="e352_15" data-beacon-uid="default"><text>setTitleBar</text></view>
+            <view bindtap="dispatchEvent" class="anu-item" data-tap-uid="e355_15" data-beacon-uid="default"><text>保存图标到桌面</text></view>
+            <view bindtap="dispatchEvent" class="anu-item" data-tap-uid="e359_12" data-beacon-uid="default"><text>路由</text></view>
+        </view>
+    </view>

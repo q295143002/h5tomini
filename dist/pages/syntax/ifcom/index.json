@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "anu-label": "/pages/syntax/components/Label/index"
+    }
+}

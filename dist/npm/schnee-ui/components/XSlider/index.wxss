@@ -1,0 +1,44 @@
+.anu-slider {
+  display: flex;
+  flex-direction: row;
+}
+.anu-slider-track {
+  width: 85%;
+  overflow: hidden;
+  position: relative;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 2px;
+}
+.anu-slider-progressBar {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  left: -9999px;
+  height: 2px;
+}
+.anu-slider-thumb-0 {
+  position: absolute;
+  z-index: 1;
+}
+.anu-slider-thumb-0 .aun-slider-progressBar {
+  background-color: #ccc;
+}
+.anu-slider-thumb-1 {
+  position: absolute;
+}
+.anu-slider-sliderBlock {
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+.anu-slider-showValue {
+  width: 15%;
+  height: 30px;
+  line-height: 30px;
+  color: #888888;
+  text-align: center;
+  font-size: 14px;
+}

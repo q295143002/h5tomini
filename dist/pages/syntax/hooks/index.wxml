@@ -1,0 +1,5 @@
+
+    <view class="anu-block">
+        <view>React Hooks,useState, useEffect, useContext</view>
+        <anu-counter data-instance-uid="{{'i10_16_' + 0}}" />
+    </view>

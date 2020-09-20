@@ -1,0 +1,20 @@
+
+    <view class="picker-demo">
+        <view class="picker-title"><text class="title-text">基本</text></view>
+        <view class="item-li"><text class="item-li-detail">一列</text>
+            <picker value="{{0}}" bindcancel="dispatchEvent" bindchange="dispatchEvent" range="{{state.list1}}" data-cancel-uid="e171_24" data-beacon-uid="default" data-change-uid="e172_24"><text>当前选择：{{state.list1[state.index]}}</text></picker>
+        </view>
+        <view class="item-li"><text class="item-li-detail">多列</text>
+            <picker mode="multiSelector" value="{{state.multiIndex}}" bindcancel="dispatchEvent" bindchange="dispatchEvent" bindcolumnchange="dispatchEvent" range="{{state.multiArray}}" data-cancel-uid="e183_24" data-beacon-uid="default" data-change-uid="e184_24" data-columnchange-uid="e185_24"><text>当前选择：{{state.multiArray[0][state.multiIndex[0]]}},{{state.multiArray[1][state.multiIndex[1]]}},{{state.multiArray[2][state.multiIndex[2]]}}</text></picker>
+        </view>
+        <view class="item-li"><text class="item-li-detail">日期选择器</text>
+            <picker mode="date" value="{{state.date}}" start="2015-09-01" end="2017-09-01" bindcancel="dispatchEvent" bindchange="dispatchEvent" data-cancel-uid="e205_24" data-beacon-uid="default" data-change-uid="e206_24"><text>当前选择：{{state.date}}</text></picker>
+        </view>
+        <view class="item-li"><text class="item-li-detail">时间选择器</text>
+            <picker mode="time" value="{{state.time}}" start="09:01" end="21:01" bindcancel="dispatchEvent" bindchange="dispatchEvent" data-cancel-uid="e218_24" data-beacon-uid="default" data-change-uid="e219_24"><text>当前选择：{{state.time}}</text></picker>
+        </view>
+        <view class="item-li"><text class="item-li-detail">省市区选择器</text>
+            <picker mode="region" value="{{state.region}}" bindcancel="dispatchEvent" bindchange="dispatchEvent" data-cancel-uid="e229_24" data-beacon-uid="default" data-change-uid="e230_24"><text>当前选择：{{state.region[0]}},{{state.region[1]}},{{state.region[2]}}</text></picker>
+        </view>
+        <view style="{{props['style16035'] }}"></view>
+    </view>

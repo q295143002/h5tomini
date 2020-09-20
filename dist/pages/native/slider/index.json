@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "anu-xslider": "/npm/schnee-ui/components/XSlider/index"
+    }
+}

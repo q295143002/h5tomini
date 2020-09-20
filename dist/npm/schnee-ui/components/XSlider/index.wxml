@@ -1,0 +1,15 @@
+
+    <view class='anu-slider'>
+        <view class="anu-slider-track" ref="trackDom" style="{{props['style17463'] }}">
+            <view bindtouchstart="dispatchEvent" bindtouchmove="dispatchEvent" bindtouchend="dispatchEvent" class="anu-slider-thumb-0" style="{{props['style17929'] }}" data-touchstart-uid="e264_24" data-beacon-uid="default" data-touchmove-uid="e265_24" data-touchend-uid="e266_24"><text class="anu-slider-progressBar" style="{{props['style19167'] }}" /><text class="anu-slider-sliderBlock" style="{{props['style19988'] }}" /></view>
+            <block wx:if="{{!props.isSingle}}">
+                <view bindtouchstart="dispatchEvent" bindtouchmove="dispatchEvent" bindtouchend="dispatchEvent" class="anu-slider-thumb-1" style="{{props['style20790'] }}" data-touchstart-uid="e292_24" data-beacon-uid="default" data-touchmove-uid="e293_24" data-touchend-uid="e294_24"><text class="anu-slider-progressBar" style="{{props['style22067'] }}" /><text class="anu-slider-sliderBlock" style="{{props['style22888'] }}" /></view>
+            </block>
+        </view>
+        <block wx:if="{{props['show-value']}}">
+            <view class="anu-slider-showValue">
+                <block wx:if="{{props.isSingle}}">{{state.showValue}}</block>
+                <block wx:elif="true">{{state.showValue[0] + "," + state.showValue[1]}}</block>
+            </view>
+        </block>
+    </view>

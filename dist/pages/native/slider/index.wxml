@@ -1,0 +1,24 @@
+
+    <view class='anu-block'>
+        <view class="anu-item"><text class="anu-page-header">设置step</text>
+            <view class="anu-block">
+                <anu-xslider data-instance-uid="{{'i39_24_' + 0}}" />
+            </view>
+        </view>
+        <view class="anu-item"><text class="anu-page-header">显示当前value</text>
+            <view class="anu-block">
+                <anu-xslider data-instance-uid="{{'i45_24_' + 0}}" />
+            </view>
+        </view>
+        <view class="anu-item"><text class="anu-page-header">设置最小/最大值</text>
+            <view class="anu-block">
+                <anu-xslider data-instance-uid="{{'i52_24_' + 0}}" />
+            </view>
+        </view>
+        <view class="anu-item">
+            <view>
+                <switch checked="{{false}}" bindchange="dispatchEvent" data-change-uid="e62_48" data-beacon-uid="default" />
+                <switch bindchange="dispatchEvent" data-change-uid="e63_32" data-beacon-uid="default" />
+            </view>
+        </view>
+    </view>

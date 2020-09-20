@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "anu-cat": "/pages/syntax/components/Cat/index",
+        "anu-fish": "/pages/syntax/components/Fish/index"
+    }
+}

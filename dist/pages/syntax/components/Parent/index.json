@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "anu-son": "/pages/syntax/components/Son/index"
+    },
+    "component": true
+}

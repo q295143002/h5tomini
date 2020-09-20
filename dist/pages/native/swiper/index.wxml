@@ -1,0 +1,52 @@
+
+    <view>
+        <view class="page-body">
+            <view class="page-section page-section-spacing swiper">
+                <swiper indicator-dots="{{state.indicatorDots}}" autoplay="{{state.autoplay}}" circular="{{state.circular}}" vertical="{{state.vertical}}" interval="{{state.interval}}" duration="{{state.duration}}" previous-margin="{{state.previousMargin + 'px'}}" next-margin="{{state.nextMargin + 'px'}}">
+                    <block wx:for="{{state.background}}" wx:for-item="item" wx:for-index="i1860">
+                        <swiper-item>
+                            <view class="swiper-item {{item}}" />
+                        </swiper-item>
+                    </block>
+                </swiper>
+            </view>
+            <view class="page-section">
+                <view class="weui-cells weui-cells_after-title">
+                    <view class="weui-cell weui-cell_switch">
+                        <view class="weui-cell__bd">指示点</view>
+                        <view class="weui-cell__ft">
+                            <switch checked="{{state.indicatorDots}}" bindchange="dispatchEvent" data-property-name="indicatorDots" data-change-uid="e83_40" data-beacon-uid="default" />
+                        </view>
+                    </view>
+                    <view class="weui-cell weui-cell_switch">
+                        <view class="weui-cell__bd">自动播放</view>
+                        <view class="weui-cell__ft">
+                            <switch checked="{{state.autoplay}}" bindchange="dispatchEvent" data-property-name="autoplay" data-change-uid="e93_40" data-beacon-uid="default" />
+                        </view>
+                    </view>
+                    <view class="weui-cell weui-cell_switch">
+                        <view class="weui-cell__bd">衔接滑动</view>
+                        <view class="weui-cell__ft">
+                            <switch checked="{{state.circular}}" bindchange="dispatchEvent" data-property-name="circular" data-change-uid="e103_40" data-beacon-uid="default" />
+                        </view>
+                    </view>
+                    <view class="weui-cell weui-cell_switch">
+                        <view class="weui-cell__bd">竖向</view>
+                        <view class="weui-cell__ft">
+                            <switch checked="{{state.vertical}}" bindchange="dispatchEvent" data-property-name="vertical" data-change-uid="e113_40" data-beacon-uid="default" />
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="page-section page-section-spacing">
+                <view class="page-section-title"><text>幻灯片切换时长(ms)</text><text class="info">{{state.duration}}</text></view>
+                <anu-xslider data-instance-uid="{{'i126_24_' + 0}}" />
+                <view class="page-section-title"><text>自动播放间隔时长(ms)</text><text class="info">{{state.interval}}</text></view>
+                <anu-xslider data-instance-uid="{{'i137_24_' + 0}}" />
+                <view class="page-section-title"><text>前边距(px)</text><text class="info">{{state.changeProperty}}</text></view>
+                <anu-xslider data-instance-uid="{{'i150_24_' + 0}}" />
+                <view class="page-section-title"><text>后边距(px)</text><text class="info">{{state.nextMargin}}</text></view>
+                <anu-xslider data-instance-uid="{{'i161_24_' + 0}}" />
+            </view>
+        </view>
+    </view>

@@ -1,0 +1,6 @@
+
+    <view class="anu-block">
+        <view>类继承的演示</view>
+        <view><input bindinput="dispatchEvent" value="{{state.age}}" data-input-uid="e23_24" data-beacon-uid="default" /></view>
+        <anu-dog data-instance-uid="{{'i27_16_' + 0}}" />
+    </view>

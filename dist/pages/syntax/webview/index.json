@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "anu-webview": "/pages/syntax/components/WebView/index"
+    }
+}

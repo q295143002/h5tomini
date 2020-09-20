@@ -1,0 +1,131 @@
+{
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "mpreact",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#929292",
+    "selectedColor": "#00bcd4",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/platform/index/index",
+        "iconPath": "/assets/image/homepage_normal.png",
+        "selectedIconPath": "/assets/image/homepage_select.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/platform/question/index/index",
+        "iconPath": "/assets/image/question_normal.png",
+        "selectedIconPath": "/assets/image/question_select.png",
+        "text": "问答社区"
+      },
+      {
+        "pagePath": "pages/platform/userCenter/index",
+        "iconPath": "/assets/image/uc_normal.png",
+        "selectedIconPath": "/assets/image/uc_select.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "pages": [
+    "pages/platform/index/index",
+    "pages/platform/ticketSearch/index",
+    "pages/platform/calendar/index",
+    "pages/platform/boat/index",
+    "pages/platform/scenic/index",
+    "pages/platform/strategy/index",
+    "pages/platform/userCenter/index",
+    "pages/platform/question/index/index",
+    "pages/platform/question/detail/index",
+    "pages/platform/cardList/index",
+    "pages/platform/citySelect/index",
+    "pages/platform/about/index"
+  ],
+  "subpackages": [
+    {
+      "root": "pages/native",
+      "name": "native",
+      "pages": [
+        "index/index",
+        "button/index",
+        "checkbox/index",
+        "input/index",
+        "slider/index",
+        "picker/index",
+        "radio/index",
+        "textarea/index",
+        "label/index",
+        "view/index",
+        "movableView/index",
+        "swiper/index",
+        "audio/index",
+        "image/index",
+        "video/index",
+        "camera/index"
+      ]
+    },
+    {
+      "root": "pages/syntax",
+      "name": "syntax",
+      "pages": [
+        "index/index",
+        "extend/index",
+        "stateless/index",
+        "hooks/index",
+        "loop/index",
+        "loop2/index",
+        "loop3/index",
+        "loop4/index",
+        "loop5/index",
+        "webview/index",
+        "inlineStyle/index",
+        "if/index",
+        "ifcom/index",
+        "children/index",
+        "await/index",
+        "multiple/index"
+      ]
+    },
+    {
+      "root": "pages/apis",
+      "name": "apis",
+      "pages": [
+        "index/index",
+        "clipboard/index",
+        "storage/index",
+        "canvas/index",
+        "canvas/strokeStyle/index",
+        "canvas/textBaseline/index",
+        "canvas/rect/index",
+        "canvas/fillStyle/index",
+        "canvas/arc/index",
+        "canvas/globalAlpha/index",
+        "route/index",
+        "request/index"
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/platform/index/index": {
+      "network": "all",
+      "packages": [
+        "apis",
+        "native"
+      ]
+    },
+    "pages/native/index/index": {
+      "packages": [
+        "syntax"
+      ]
+    },
+    "pages/apis/index/index": {
+      "packages": [
+        "syntax"
+      ]
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}
